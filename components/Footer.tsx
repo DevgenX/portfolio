@@ -20,9 +20,9 @@ const Contact = () => {
   }
 
   return (
-    <footer className="py-16 lg:section" id="contact">
+    <footer className="py-20 lg:section" id="contact">
       <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-400 border-0" />
-      <div className="container mx-auto">
+      <div className="px-20 container mx-auto">
         <div className="flex flex-col mt-12 lg:flex-row">
           <motion.div
             variants={fadeIn("right", 0.3)}
