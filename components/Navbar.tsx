@@ -4,7 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
 import { useTheme } from "next-themes";
-import { BsMoonFill, BsFillSunFill } from "react-icons/Bs";
+import { BsMoonFill, BsFillSunFill } from "react-icons/bs";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 interface NavItems {
