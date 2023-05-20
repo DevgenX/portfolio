@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "@/helpers/variants";
 import Link from "next/link";
+import { useForm } from "@formspree/react";
+import ValidationError from "@/helpers/ValidationError";
 
 import React from "react";
 import {
@@ -10,9 +12,11 @@ import {
 } from "react-icons/ai";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xwkjjevp");
+
   return (
     <footer className="py-16 lg:section" id="contact">
-      <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-600 border-0" />
+      <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-400 border-0" />
       <div className="container mx-auto">
         <div className="flex flex-col mt-12 lg:flex-row">
           <motion.div
@@ -60,27 +64,45 @@ const Contact = () => {
           </motion.div>
 
           <motion.form
+            onSubmit={handleSubmit}
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 border text-black dark:text-white rounded-2xl flex flex-col gap-y-6 pb-15 p-6 items-start "
+            className="flex-1 border-2 border-solid border-black dark:border-white text-black dark:text-white rounded-2xl flex flex-col gap-y-6 pb-15 p-6 items-start "
           >
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-black dark:placeholder:text-white text-black dark:text-white focus:border-accent transition-all"
               type="text"
               placeholder="Your name"
+              id="name"
+              name="name"
             />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-black dark:placeholder:text-white text-black dark:text-white focus:border-accent transition-all"
               type="text"
               placeholder="Your email"
+              id="email"
+              name="email"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
             />
             <textarea
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-black dark:placeholder:text-white text-black dark:text-white focus:border-accent transition-all resize-none mb-12"
               placeholder="Your message"
-            ></textarea>
-            <button className="btn btn-lg text-white dark:text-black dark:bg-white bg-black ">
+              id="message"
+              name="message"
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+            <button className="btn btn-lg text-white dark:text-black dark:bg-white bg-black">
               Send message
             </button>
           </motion.form>

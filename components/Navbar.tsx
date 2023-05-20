@@ -3,9 +3,8 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
-import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
-import { RiMoonFill, RiSunLine } from "react-icons/ri";
+import { BsMoonFill, BsFillSunFill } from "react-icons/Bs";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 interface NavItems {
@@ -31,7 +30,6 @@ const navLinks: NavItems[] = [
 export default function Navbar() {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
-  const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
   return (
     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
@@ -89,14 +87,14 @@ export default function Navbar() {
                   onClick={() => setTheme("light")}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiSunLine size={25} color="black" />
+                  <BsFillSunFill size={25} color="black" />
                 </button>
               ) : (
                 <button
                   onClick={() => setTheme("dark")}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiMoonFill size={25} />
+                  <BsMoonFill size={25} />
                 </button>
               )}
             </div>
