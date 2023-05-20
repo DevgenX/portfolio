@@ -9,11 +9,6 @@ import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Seb Gonzales",
-  description: "Created with TypeScript and Next",
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -21,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="min-h-screen dark:bg-slate-900 antialiased">
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
           {children}

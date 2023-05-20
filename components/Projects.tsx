@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SlideUp from "./Slideup";
-import { BsGithub, BsBoxArrowInUpRight } from "react-icons/bs";
+import { BsGithub, BsBoxArrowInUpRight } from "react-icons/Bs";
 import { Projects } from "@/utils/projects";
 
 const ProjectsSection = () => {

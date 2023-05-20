@@ -14,6 +14,11 @@ import {
 const Contact = () => {
   const [state, handleSubmit] = useForm("xwkjjevp");
 
+  if (state.succeeded) {
+    alert("Thanks for contacting me! I'll be in touch shortly.");
+    window.location.reload();
+  }
+
   return (
     <footer className="py-16 lg:section" id="contact">
       <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-400 border-0" />
