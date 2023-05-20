@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home {
+  background: url("../public/assets/artistbluff.jpg");
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  @apply rounded-full font-primary font-medium;
+}
+
+.btn-lg {
+  @apply h-[56px] px-10 text-base;
+}
