@@ -5,7 +5,6 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/helpers/variants";
-import Image from "next/image";
 
 const Banner = () => {
   return (

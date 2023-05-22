@@ -1,6 +1,5 @@
-"use client"; // this is a client component
+"use client";
 
-import React from "react";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
 import { useTheme } from "next-themes";

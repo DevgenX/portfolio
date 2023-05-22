@@ -1,5 +1,3 @@
-import Image from "next/image";
-import AboutImage from "@/public/about.png";
 import { frontend, backend, development } from "@/utils/languages";
 
 const About = () => {
@@ -8,7 +6,7 @@ const About = () => {
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
         <h1 className="text-center mb-6 font-bold text-4xl">
           About Me
-          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded md:hidden" />
+          <hr className="w-20 h-1 mx-auto my-4 bg-teal-500 border-0 rounded " />
         </h1>
         <p className="text-xl leading-7 sm:text-center mb-4 text-black dark:text-white">
           My name is{" "}
