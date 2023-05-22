@@ -22,19 +22,19 @@ const Contact = () => {
   return (
     <footer className="py-20 lg:section" id="contact">
       <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-400 border-0" />
-      <div className="px-20 container mx-auto">
+      <div className="px-10 container mx-auto">
         <div className="flex flex-col mt-12 lg:flex-row">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex justify-start items-center"
+            className="flex-1 block md:flex justify-start items-center text-center sm:block"
           >
             <h2 className="text-[30px] lg:text-[60px] leading-none mb-12">
               Let&apos;s work <br /> together!
             </h2>
-            <div className="flex flex-row items-center justify-center space-x-2 mx-auto">
+            <div className="flex flex-row items-center justify-center space-x-2 mx-auto mb-6">
               <Link
                 href="https://github.com/DevgenX"
                 rel="noreferrer"
