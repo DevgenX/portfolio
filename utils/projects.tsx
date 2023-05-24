@@ -22,8 +22,7 @@ export const Projects: ProjectProps[] = [
     description:
       "A web3 blockchain-integrated play-to-earn Ragnarok game with governance and farming tokens that allows users to earn tokens in the game and exchange for other crypto tokens.",
     image: "/assets/ragnarok.png",
-    github:
-      "https://polygonscan.com/token/0x8d65d531cec2bd07b468b0dc68a89daa8fcfffa7#code",
+    github: "https://github.com/DevgenX/invasion-ro",
     link: "https://marketplace.invasionro.net/",
   },
   {
