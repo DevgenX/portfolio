@@ -21,7 +21,7 @@ const Contact = () => {
 
   return (
     <footer className="py-20 lg:section" id="contact">
-      <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-600 dark:bg-teal-500 border-0" />
+      <hr className="w-full h-0.5 mx-auto mt-8 bg-neutral-600 dark:bg-teal-700 border-0" />
       <div className="px-10 container mx-auto">
         <div className="flex flex-col mt-12 lg:flex-row">
           <motion.div
