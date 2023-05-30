@@ -101,6 +101,7 @@ const Contact = () => {
               placeholder="Your message"
               id="message"
               name="message"
+              required
             />
             <ValidationError
               prefix="Message"
