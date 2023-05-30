@@ -82,6 +82,7 @@ const Contact = () => {
               placeholder="Your name"
               id="name"
               name="name"
+              required
             />
             <ValidationError prefix="Name" field="name" errors={state.errors} />
             <input
@@ -90,6 +91,7 @@ const Contact = () => {
               placeholder="Your email"
               id="email"
               name="email"
+              required
             />
             <ValidationError
               prefix="Email"
