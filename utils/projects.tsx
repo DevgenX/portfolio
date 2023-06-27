@@ -18,12 +18,12 @@ export const Projects: ProjectProps[] = [
     link: "https://tradingleague.onrender.com/",
   },
   {
-    name: "Invasion RO",
+    name: "DappChat",
     description:
-      "A web3 blockchain-integrated play-to-earn Ragnarok game with governance and farming tokens that allows users to earn tokens in the game and exchange for other crypto tokens.",
-    image: "/assets/ragnarok.png",
-    github: "https://github.com/DevgenX/invasion-ro",
-    link: "https://marketplace.invasionro.net/",
+      "A multi-chain and fully on-chain decentralized messaging application that allows users to add, message, block and unblock users all in the blockchain.",
+    image: "/assets/dappchat.png",
+    github: "https://github.com/DevgenX/dappchat",
+    link: "https://www.dappchat.io/",
   },
   {
     name: "Jobby",
