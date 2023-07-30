@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SlideUp from "@/components/Slideup";
-import { BsGithub, BsBoxArrowInUpRight } from "react-icons/bs";
+import { BsGithub, BsBoxArrowInUpRight, BsYoutube } from "react-icons/bs";
 import { Projects } from "@/utils/projects";
 
 const ProjectsSection = () => {
@@ -44,6 +44,12 @@ const ProjectsSection = () => {
                       </Link>
                       <Link href={project.link} target="_blank">
                         <BsBoxArrowInUpRight
+                          size={30}
+                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        />
+                      </Link>
+                      <Link href={project.youtube} target="_blank">
+                        <BsYoutube
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />

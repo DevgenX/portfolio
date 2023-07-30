@@ -6,17 +6,10 @@ interface ProjectProps {
   image: string;
   github: string;
   link: string;
+  youtube: string;
 }
 
 export const Projects: ProjectProps[] = [
-  {
-    name: "TradingLeague",
-    description:
-      "TradingLeague is a cryptocurrency trading game with 3 game modes (Normal, PvP and Ranked). The game lets you practice daytrading the most enjoyable and most interactive way.",
-    image: "/assets/tradingleague.png",
-    github: "https://github.com/DevgenX/TradingLeague",
-    link: "https://tradingleague.onrender.com/",
-  },
   {
     name: "DappChat",
     description:
@@ -24,6 +17,16 @@ export const Projects: ProjectProps[] = [
     image: "/assets/dappchat.png",
     github: "https://github.com/DevgenX/dappchat",
     link: "https://www.dappchat.io/",
+    youtube: "https://www.youtube.com/watch?v=jnu7UGOoiEM",
+  },
+  {
+    name: "TradingLeague",
+    description:
+      "TradingLeague is a cryptocurrency trading game with 3 game modes (Normal, PvP and Ranked). The game lets you practice daytrading the most enjoyable and most interactive way.",
+    image: "/assets/tradingleague.png",
+    github: "https://github.com/DevgenX/TradingLeague",
+    link: "https://tradingleague.onrender.com/",
+    youtube: "https://www.youtube.com/watch?v=iAf_2z9tKzk",
   },
   {
     name: "Jobby",
@@ -32,5 +35,6 @@ export const Projects: ProjectProps[] = [
     image: "/assets/jobby.png",
     github: "https://github.com/DevgenX/Jobby",
     link: "https://jobby-vwkk.onrender.com/",
+    youtube: "https://www.youtube.com/@sybgonzales",
   },
 ];
