@@ -8,17 +8,45 @@ const About = () => {
           About Me
           <hr className="w-20 h-1 mx-auto my-4 bg-teal-500 border-0 rounded " />
         </h1>
-        <p className="text-xl leading-7 sm:text-center mb-4 text-black dark:text-white">
+        <p className="text-xl leading-7 text-center mb-4 text-black dark:text-white">
           My name is{" "}
           <span className="font-semibold justify-center text-teal-400">
             Seb Gonzales
           </span>
-          . I graduated from Flatiron School of Software Engineering and have
-          been working on web2 and web3 related projects as a freelancer. I love
-          writing blogs about what I&#39;m learning, mainly in Coding and
-          DevOps. I am passionate in Web and Blockchain development. Aside from
-          coding, I do daytrading with the goal of transitioning into a
-          quantitative trader.
+          {""}, {""}I have a diverse range of experiences in the tech industry.
+          Over the years, I&apos;ve had the privilege of contributing to several
+          innovative startups, including:
+          <ul className="list-disc list-inside">
+            <br />
+            <li>
+              An AI-powered travel mobile application, where I played a pivotal
+              role in building the user-interface.
+            </li>
+            <br />
+            <li>
+              An AI-driven social media application that leverages cutting-edge
+              technology to enhance user experience.
+            </li>
+            <br />
+            <li>
+              A Web3 AI NFT startup, where I delved into the fascinating
+              intersection of blockchain, artificial intelligence, and
+              generative art.
+            </li>
+            <br />
+            <li>
+              A Web3 gaming startup, where I built a blockchain-integrated
+              marketplace allowing users to buy/sell in-game items.
+            </li>
+            <br />
+            <span>
+              Currently, I&apos;m channeling my expertise as a React Native
+              developer for an AI-integrated social media startup. In addition,
+              I&apos;m passionately volunteering as a full-stack engineer for a
+              non-profit organization, where I&apos;m dedicated to making a
+              positive impact through technology.
+            </span>
+          </ul>
           <br />
         </p>
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
