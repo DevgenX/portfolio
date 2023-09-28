@@ -3,7 +3,7 @@ import { frontend, backend, development } from "@/utils/languages";
 const About = () => {
   return (
     <section id="about">
-      <div className="my-12 pb-12 md:pt-16 md:pb-48">
+      <div className="my-5 pb-12 md:pt-10 md:pb-48">
         <h1 className="text-center mb-6 font-bold text-4xl">
           About Me
           <hr className="w-20 h-1 mx-auto my-4 bg-teal-500 border-0 rounded " />
